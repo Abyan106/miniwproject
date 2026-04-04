@@ -72,6 +72,12 @@ struct Node
 
 Node *head = NULL;
 
+// buat reset si kasus nya biar enggak reset, jadi tiap hari beda kasus nantinya
+void resetArsip()
+{
+    head = NULL;
+}
+
 // ================= linked listnya =================
 void tambahArsip(Kasus k)
 {
@@ -188,7 +194,7 @@ Player prolog()
     cout << p.nama << "(Hanya terdiam dan mencoba memproses apa yang telah terjadi)" << endl;
     tekanEnter();
 
-    cout << p.nama << "\":hmm kayak...ada yang aneh deh dengan pak Santoso, aura nya dingin banget\"" << endl;
+    cout << p.nama << " :\"hmm kayak...ada yang aneh deh dengan pak Santoso, aura nya dingin banget\"" << endl;
     tekanEnter();
 
     return p;
@@ -197,7 +203,7 @@ Player prolog()
 // ==================== scene istirahat ===================
 void sceneIstirahat(Player p)
 {
-    cout << p.nama << "\"lah....mati? ini gara-gara listrik kah? huh?\"" << endl;
+    cout << p.nama << ": \"lah....mati? ini gara-gara listrik kah? huh?\"" << endl;
     tekanEnter();
 
     cout << "Aku membuat catatan kecil di meja untuk cek kasus tersebut nanti" << endl;
@@ -209,7 +215,7 @@ void sceneIstirahat(Player p)
     cout << "Pak Santoso: \"Ikuti saya.\"" << endl;
     tekanEnter();
 
-    cout << p.nama << "(mengikutinya ke sebuah ruangan.)" << endl;
+    cout << p.nama << ": (mengikutinya ke sebuah ruangan.)" << endl;
     tekanEnter();
 
     cout << "Ternyata itu kamar tidur." << endl;
@@ -224,7 +230,7 @@ void sceneIstirahat(Player p)
     cout << "Pak Santoso: \"kalo begitu bapak pulang dulu, nanti bapak yang akan kunci kantor nya\"" << endl;
     tekanEnter();
 
-    cout << p.nama << " (merasa ada yang aneh)" << endl;
+    cout << p.nama << ": (merasa ada yang aneh)" << endl;
     tekanEnter();
 
     cout << "Pak Santoso: \"Besok kerja jam 8.\"" << endl;
@@ -236,19 +242,49 @@ void sceneIstirahat(Player p)
     cout << "Pintu tertutup." << endl;
     tekanEnter();
 
-    cout << p.nama << ":\"hmm harus nya kalo misalkan aku tidur disini, aku ga sih yang kunci kantor nya\"" << endl;
+    cout << p.nama << ": \"hmm harus nya kalo misalkan aku tidur disini, aku ga sih yang kunci kantor nya\"" << endl;
     tekanEnter();
 
-    cout << p.nama << ":\"nanti aku kekunci disini dong? lahh...ughhh udahlah, aku terlalu capek, gausah makan juga gapapalah\"" << endl;
+    cout << p.nama << ": \"nanti aku kekunci disini dong? lahh...ughhh udahlah, aku terlalu capek, gausah makan juga gapapalah\"" << endl;
     tekanEnter();
 
-    cout << p.nama << " tertidur pulas..." << endl;
+    cout << p.nama << ": (tertidur pulas...)" << endl;
+    tekanEnter();
+}
+
+// chapter 1
+void chapter1awal(Player p)
+{
+    cout << "Aku bangun di jam 6 pagi. Angin sejuk bisa terasa dari dalam kamar.\n Aku rasa kantor ini berada di dataran tinggi karena rumahku yang berada di dekat pantai selalu terasa panas." << endl;
+    tekanEnter();
+
+    cout << p.nama << ":\"gila ni kantor sejuk banget\"" << endl;
+    tekanEnter();
+
+    cout << "Saat aku menoleh ke meja di sebelah kasur ku, aku bisa melihat sebuah roti dan susu yang sepertinya sudah dipersiapkan untukku. \nBahkan dipintu sudah ada seragam polisi yang digantung. \nAku pun mulai mempersiapkan diriku." << endl;
+    tekanEnter();
+
+    cout << "Saat aku keluar kamar, Pak Santoso sudah menungguku." << endl;
+    tekanEnter();
+
+    cout << "Pak Santoso: \"Ikuti aku.\n"
+         << endl;
+    tekanEnter();
+
+    cout << "Nada datarnya entah kenapa sering membuatku kurang nyaman. " << endl;
+    tekanEnter();
+
+    cout << "Tapi aku kesampingkan saja pikiran itu dan mengikutinya ke ruang arsip" << endl;
+    tekanEnter();
+
+    cout << "Sesampainya disana, aku langsung menyalakan komputer ku untuk memulai pekerjaanku hari ini. Hari ini sepertinya ada 10 file kasus yang masuk :" << endl;
     tekanEnter();
 }
 
 //================== Scene Chapter 3 - Penentuan Nasib
 
-void sceneChapter3(Player p){
+void sceneChapter3(Player p)
+{
 
     cout << "\n=========== Chapter 3 - Penentuan Nasib ===========" << endl;
     tekanEnter();
@@ -295,10 +331,10 @@ void sceneChapter3(Player p){
     cout << "Seorang bapak-bapak memanggil namaku. Dari tampangnya, ia terlihat seperti orang yang percaya diri dan bisa diandalkan. Aku bisa melihatnya dari banyaknya orang-orang yang mengelilingi dia sekarang." << endl;
     tekanEnter();
 
-    cout << p.nama << ":    \"O-oh… halo pak! Iya, saya rekrutan baru itu. Perkenalkan pak nama saya " << p.nama << " pak\""<< endl;
+    cout << p.nama << ":    \"O-oh… halo pak! Iya, saya rekrutan baru itu. Perkenalkan pak nama saya " << p.nama << " pak\"" << endl;
     tekanEnter();
 
-    cout << "???:   \"" << p.nama <<" ya… senang berkenalan denganmu. Nama bapak, Hendrik. Kalau ada hal-hal yang bikin kamu kesulitan, bisa panggil saya aja ya!\"" << endl;
+    cout << "???:   \"" << p.nama << " ya… senang berkenalan denganmu. Nama bapak, Hendrik. Kalau ada hal-hal yang bikin kamu kesulitan, bisa panggil saya aja ya!\"" << endl;
     tekanEnter();
 
     cout << "Entah kenapa, suaranya yang ceria itu bisa membuatku sedikit tenang kalau dibandingkan Pak Santoso." << endl;
@@ -348,7 +384,8 @@ void sceneChapter3(Player p){
 }
 
 //================== Scene Sadar Chapter 3 - Penentuan Nasib
-void sceneEndingChapter3(Player p){
+void sceneEndingChapter3(Player p)
+{
 
     cout << p.nama << ":    \"E-eh… tunggu dulu, ini kan nama aku!\"" << endl;
     tekanEnter();
@@ -375,7 +412,7 @@ void sceneEndingChapter3(Player p){
     tekanEnter();
 }
 
-//Ending Untuk Chapter 3
+// Ending Untuk Chapter 3
 
 void endingChapter3(int pilihan, Player player)
 {
@@ -388,7 +425,7 @@ void endingChapter3(int pilihan, Player player)
 
         cout << "Komputer itu tiba-tiba langsung mati dan seluruh lampu di kantor ini juga tiba-tiba mati. Ini jelas-jelas membuatku merinding." << endl;
         tekanEnter();
-        
+
         cout << "Aku mencoba untuk menyalakan flashlight dari HP ku dan untungnya bisa dinyalakan." << endl;
         tekanEnter();
 
@@ -438,7 +475,7 @@ void endingChapter3(int pilihan, Player player)
     case 3:
 
         cout << "Aku memilih untuk mengabaikan kasus itu." << endl;
-        tekanEnter();   
+        tekanEnter();
 
         cout << "Komputer itu tiba-tiba langsung mati seperti biasa." << endl;
         tekanEnter();
@@ -477,14 +514,15 @@ void endingChapter3(int pilihan, Player player)
 
         cout << "Sepertinya mereka tahu kalau aku tahu terlalu banyak mengenai keanehan di kantor polisi tersebut." << endl;
         tekanEnter();
-        
+
         cout << "Keheningan di ruangan ini kemudian hilang dengan seseorang yang tiba-tiba masuk." << endl;
         tekanEnter();
 
         cout << "Dari kegelapan ia mengatakan 'Yo, lama tidak bertemu!'" << endl;
         tekanEnter();
 
-        cout << "\n=== ENDING 3: ABAIKAN ===\n" << endl;
+        cout << "\n=== ENDING 3: ABAIKAN ===\n"
+             << endl;
         tekanEnter();
 
         cout << "=== BERSAMBUNG ===\n";
@@ -521,7 +559,7 @@ bool dataLengkap(Kasus k)
         k.deskripsi != "");
 }
 
-void prosesKasus(Kasus *k, string saranAwal, Player p, bool kasusMisteri = false)
+void prosesKasus(Kasus *k, string saranAwal, Player p, int levelMisteri = 0)
 {
     int pilihan;
     bool buktiDitemukan = false;
@@ -558,18 +596,47 @@ void prosesKasus(Kasus *k, string saranAwal, Player p, bool kasusMisteri = false
             return; // nah ini keluar nya, dicari cari enggak ketemu jir
 
         case 2:
-            if (kasusMisteri)
+            cout << "\nMencari bukti...\n";
+            cout << "...\n";
+
+            if (levelMisteri == 1) // 🔴 PROLOG
             {
-                cout << "\nMencari bukti...\n";
-                cout << "...\n";
                 cout << "Tidak ada data ditemukan.\n";
                 cout << "Sistem mengalami error.\n";
                 cout << "Layar tiba-tiba mati.\n";
-                tekanEnter();
 
-                sceneIstirahat(p);
-                return;
+                tekanEnter();
+                return; // ⛔ sengaja keluar → trigger scene prolog
             }
+            else if (levelMisteri == 2) // 🟡 CHAPTER 1
+            {
+                cout << "Sistem menemukan data yang tidak seharusnya ada.\n";
+                cout << "Beberapa data berhasil dipulihkan.\n";
+
+                // 🔥 reveal dikit
+                if (k->status == "")
+                    k->status = "Meninggal Dunia";
+
+                if (k->kategori == "")
+                    k->kategori = "Bunuh Diri";
+
+                buktiDitemukan = true;
+
+                tekanEnter();
+                break;
+            }
+
+            // 🟢 NORMAL CASE
+            cout << "CCTV ditemukan...\n";
+            cout << "Data tambahan diperoleh...\n";
+            buktiDitemukan = true;
+            break;
+
+            cout << "\nMencari bukti...\n";
+            cout << "CCTV ditemukan...\n";
+            cout << "Data tambahan diperoleh...\n";
+            buktiDitemukan = true;
+            break;
 
             cout << "\nMencari bukti...\n";
             cout << "CCTV ditemukan...\n";
@@ -618,6 +685,19 @@ void prosesKasus(Kasus *k, string saranAwal, Player p, bool kasusMisteri = false
     }
 }
 
+void tampilArsip()
+{
+    Node *temp = head;
+    int i = 1;
+
+    while (temp != NULL)
+    {
+        cout << "\nKasus ke-" << i++ << endl;
+        tampilKasus(temp->data);
+        temp = temp->next;
+    }
+}
+
 // ngubah data data si player
 Kasus kasusPlayerRahasia(Player p)
 {
@@ -644,7 +724,8 @@ Kasus kasusPlayerRahasia(Player p)
 }
 
 // Kasus Player Chapter 3
-Kasus kasusPlayerChapter3(Player p){
+Kasus kasusPlayerChapter3(Player p)
+{
     Kasus k;
 
     // data awal (tampak normal tapi kosong)
@@ -663,14 +744,14 @@ Kasus kasusPlayerChapter3(Player p){
     k.d_tanggal = "UNKNOWN";
     k.d_lokasi = "Ruang Arsip";
     k.d_kategori = "Orang Hilang";
-    k.d_deskripsi = "Subjek masih bekerja... namun tercatat hilang.";   
+    k.d_deskripsi = "Subjek masih bekerja... namun tercatat hilang.";
 
     return k;
 }
 
 // ================= MAIN =================
 int main()
-{   
+{
     int pilihan;
     Player player = prolog();
 
@@ -678,6 +759,7 @@ int main()
 
     // ================= ARRAY KASUS =================
     Kasus kasusList[3];
+    Kasus kasusChapter1[10];
     Kasus kasusChapter3[14];
 
     kasusList[0] = buatKasus(
@@ -715,143 +797,253 @@ int main()
     prosesKasus(&kasusList[2], "Tolak Kasus (data tidak jelas)", player);
     tekanEnter();
 
-
     // first anomali case
     Kasus misteri = kasusPlayerRahasia(player);
 
-    prosesKasus(&misteri, "...", player,  true);
+    prosesKasus(&misteri, "...", player, 1);
     tekanEnter();
-
-    // ================= anu arsip biar ke next arsip =================
-    cout << "\n=== ARSIP TERSIMPAN ===\n";
-
-    Node *temp = head;
-    int i = 1;
-
-    while (temp != NULL)
-    {
-        cout << "\nKasus ke-" << i++ << endl;
-        tampilKasus(temp->data);
-        temp = temp->next;
-    }
 
     sceneIstirahat(player);
     cout << "\nHari pertama selesai...\n";
+    cout << "\nRekap hari ini" << endl;
+    tampilArsip();
+    tekanEnter();
+
+    resetArsip();
+
+    chapter1awal(player);
+    // ================= CHAPTER 1 CASES =================
+
+    kasusChapter1[0] = buatKasus(
+        "Sumanto", "52 Tahun", "Meninggal Dunia",
+        "20/11/2020", "Rumah Sumanto",
+        "Bunuh Diri",
+        "Sumanto diduga bunuh diri karena terjerat hutang sebesar 300 juta rupiah");
+
+    kasusChapter1[1] = buatKasus(
+        "Agung Dermawan", "24 Tahun", "Luka Berat",
+        "01/05/2024", "",
+        "Kecelakaan",
+        "",
+
+        // data tambahan
+        "Agung Dermawan", "24 Tahun", "Luka Berat",
+        "01/05/2024", "Jalan Raya",
+        "Kecelakaan",
+        "Korban mengalami kecelakaan tunggal di jalan raya");
+
+    kasusChapter1[2] = buatKasus(
+        "Dhea Rantasari", "15 Tahun", "Meninggal Dunia",
+        "15/05/2025", "Sekolah",
+        "Pembunuhan Berencana",
+        "Korban ditemukan tak bernyawa di toilet sekolah. Diduga pacarnya yang berinisial R membunuhnya dengan racun.");
+
+    kasusChapter1[3] = buatKasus(
+        "", "", "",
+        "", "",
+        "",
+        "");
+
+    // bebas kamu tambah variasi kasus 4–8 biar makin hidup
+    kasusChapter1[4] = buatKasus(
+        "Budi", "", "Hilang",
+        "", "",
+        "Orang Hilang",
+        "",
+
+        "Budi", "40 Tahun", "Hilang",
+        "02/02/2025", "Terminal",
+        "Orang Hilang",
+        "Terakhir terlihat di terminal bus");
+
+    kasusChapter1[5] = buatKasus(
+        "", "30 Tahun", "Meninggal",
+        "", "Hotel",
+        "Kematian Misterius",
+        "",
+
+        "Rizky", "30 Tahun", "Meninggal",
+        "10/02/2025", "Hotel",
+        "Kematian Misterius",
+        "Ditemukan meninggal di kamar hotel tanpa luka");
+
+    kasusChapter1[6] = buatKasus(
+        "Slamet", "50 Tahun", "Luka",
+        "", "",
+        "Perampokan",
+        "");
+
+    kasusChapter1[7] = buatKasus(
+        "???", "", "",
+        "", "",
+        "",
+        "",
+
+        "Unknown", "??", "Tidak Diketahui",
+        "Unknown", "Gang Sempit",
+        "Anomali",
+        "Terdeteksi tanpa laporan");
+
+    kasusChapter1[8] = buatKasus(
+        "ERROR", "NULL", "NULL",
+        "NULL", "NULL",
+        "NULL",
+        "DATA CORRUPT");
+
+    kasusChapter1[9] = buatKasus(
+        player.nama, player.umur, "",
+        "", "",
+        "",
+        "",
+
+        // 🔥 data tambahan (KEBUKA SAAT CARI BUKTI)
+        player.nama, player.umur, "Meninggal Dunia",
+        "", "",
+        "Bunuh Diri",
+        "");
+
+    cout << "\n=== HARI KEDUA ===\n";
+    tekanEnter();
+
+    cout << "\n=== SHIFT DIMULAI ===\n";
+
+    for (int i = 0; i < 10; i++)
+    {
+        if (i == 9)
+        {
+            // kasus player (anomali)
+            prosesKasus(&kasusChapter1[i], "Cek Bukti Kasus (data kurang lengkap)", player, 2);
+        }
+        else if (i >= 8)
+        {
+            prosesKasus(&kasusChapter1[i], "Tolak Kasus (data tidak jelas)", player);
+        }
+        else if (i >= 4)
+        {
+            prosesKasus(&kasusChapter1[i], "Cari Bukti Kasus (data belum lengkap)", player);
+        }
+        else
+        {
+            prosesKasus(&kasusChapter1[i], "Terima Kasus (data sudah valid)", player);
+        }
+
+        tekanEnter();
+    }
 
     //============================ Chapter 3 ===============================
-    
+
     //        ================= Array Kasus Chapter 3 =================
 
+    cout << "\n=== HARI BERIKUTNYA ===\n";
+    tekanEnter();
+
     kasusChapter3[0] = buatKasus(
-    "Andi Pratama", "32 Tahun", "Meninggal",
-    "12/03/2025", "Rumah",
-    "Pembunuhan",
-    "Korban ditemukan di dapur dengan luka tusuk");
+        "Andi Pratama", "32 Tahun", "Meninggal",
+        "12/03/2025", "Rumah",
+        "Pembunuhan",
+        "Korban ditemukan di dapur dengan luka tusuk");
 
     kasusChapter3[1] = buatKasus(
-    "Rina", "25 Tahun", "Luka Berat",
-    "10/03/2025", "Jalan Raya",
-    "Kecelakaan",
-    "Tabrakan dengan truk");
+        "Rina", "25 Tahun", "Luka Berat",
+        "10/03/2025", "Jalan Raya",
+        "Kecelakaan",
+        "Tabrakan dengan truk");
 
     kasusChapter3[2] = buatKasus(
-    "Bambang", "45 Tahun", "Hilang",
-    "01/03/2025", "Hutan Kota",
-    "Orang Hilang",
-    "Tidak kembali setelah jogging");
+        "Bambang", "45 Tahun", "Hilang",
+        "01/03/2025", "Hutan Kota",
+        "Orang Hilang",
+        "Tidak kembali setelah jogging");
 
     kasusChapter3[3] = buatKasus(
-    "Sari", "29 Tahun", "Selamat",
-    "05/03/2025", "Mall",
-    "Percobaan Pencurian",
-    "Pelaku berhasil ditangkap");
+        "Sari", "29 Tahun", "Selamat",
+        "05/03/2025", "Mall",
+        "Percobaan Pencurian",
+        "Pelaku berhasil ditangkap");
 
     kasusChapter3[4] = buatKasus(
-    "Dewi", "", "Hilang",
-    "", "",
-    "Orang Hilang",
-    "",
+        "Dewi", "", "Hilang",
+        "", "",
+        "Orang Hilang",
+        "",
 
-    "Dewi", "21 Tahun", "Hilang",
-    "02/03/2025", "Kampus",
-    "Orang Hilang",
-    "Terakhir terlihat di parkiran"
-    );
+        "Dewi", "21 Tahun", "Hilang",
+        "02/03/2025", "Kampus",
+        "Orang Hilang",
+        "Terakhir terlihat di parkiran");
 
     kasusChapter3[5] = buatKasus(
-    "", "38 Tahun", "Meninggal",
-    "", "Gudang",
-    "Kematian Misterius",
-    "",
+        "", "38 Tahun", "Meninggal",
+        "", "Gudang",
+        "Kematian Misterius",
+        "",
 
-    "Rahmat", "38 Tahun", "Meninggal",
-    "08/03/2025", "Gudang",
-    "Kematian Misterius",
-    "Ditemukan tanpa luka"
-    );
+        "Rahmat", "38 Tahun", "Meninggal",
+        "08/03/2025", "Gudang",
+        "Kematian Misterius",
+        "Ditemukan tanpa luka");
 
     kasusChapter3[6] = buatKasus(
-    "", "", "",
-    "", "",
-    "Perampokan",
-    "",
+        "", "", "",
+        "", "",
+        "Perampokan",
+        "",
 
-    "Tono", "50 Tahun", "Luka",
-    "11/03/2025", "Pasar",
-    "Perampokan",
-    "Dirampok saat berdagang"
-    );
+        "Tono", "50 Tahun", "Luka",
+        "11/03/2025", "Pasar",
+        "Perampokan",
+        "Dirampok saat berdagang");
 
     kasusChapter3[7] = buatKasus(
-    "???", "", "",
-    "", "",
-    "",
-    "",
+        "???", "", "",
+        "", "",
+        "",
+        "",
 
-    "Unknown", "??", "Tidak Diketahui",
-    "??/??/????", "Gang Sempit",
-    "Anomali",
-    "Terdeteksi oleh sistem tanpa laporan"
-    );
+        "Unknown", "??", "Tidak Diketahui",
+        "Unknown", "Gang Sempit",
+        "Anomali",
+        "Terdeteksi oleh sistem tanpa laporan");
 
     kasusChapter3[8] = buatKasus(
-    "###", "???", "ERROR",
-    "NULL", "NULL",
-    "NULL",
-    "DATA CORRUPT");
+        "###", "???", "ERROR",
+        "NULL", "NULL",
+        "NULL",
+        "DATA CORRUPT");
 
     kasusChapter3[9] = buatKasus(
-    "", "", "",
-    "", "",
-    "",
-    "");
+        "", "", "",
+        "", "",
+        "",
+        "");
 
     kasusChapter3[10] = buatKasus(
-    "YTTA", "YTTA", "YTTA",
-    "YTTA", "YTTA",
-    "YTTA",
-    "TIDAK VALID");
+        "YTTA", "YTTA", "YTTA",
+        "YTTA", "YTTA",
+        "YTTA",
+        "TIDAK VALID");
 
     kasusChapter3[11] = buatKasus(
-    "NULL", "NULL", "NULL",
-    "NULL", "NULL",
-    "NULL",
-    "SYSTEM FAILURE");
+        "NULL", "NULL", "NULL",
+        "NULL", "NULL",
+        "NULL",
+        "SYSTEM FAILURE");
 
     kasusChapter3[12] = buatKasus(
-    "???", "???", "???",
-    "", "",
-    "",
-    "Data tidak dapat diproses");
+        "???", "???", "???",
+        "", "",
+        "",
+        "Data tidak dapat diproses");
 
     kasusChapter3[13] = kasusPlayerRahasia(player);
 
     //        ================= Jalanin Kasus Chapter 3 =================
     sceneChapter3(player);
     tekanEnter();
-    
+
     cout << "\n=== SHIFT MALAM DIMULAI ===\n";
-    for (int i = 0; i < 14; i++){
+    for (int i = 0; i < 14; i++)
+    {
         if (i == 13)
         {
             // kasus terakhir = player (anomali)
@@ -875,7 +1067,7 @@ int main()
 
         tekanEnter();
     }
-    
+
     // Kasus Player Muncul kembali
     Kasus finalCase;
 
@@ -888,7 +1080,7 @@ int main()
     finalCase.deskripsi = player.nama + " ditemukan tidak bernyawa di dalam ruang arsip dengan luka tembak di kepala.";
     tampilKasus(finalCase);
 
-    //Jalanin Scene Ending Chapter 3
+    // Jalanin Scene Ending Chapter 3
     sceneEndingChapter3(player);
 
     cout << "\n1. Terima Kasus\n2. Tolak Kasus\n3. Abaikan Kasus\n";
