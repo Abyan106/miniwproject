@@ -128,43 +128,61 @@ Player prolog()
     cout << "Paman: \"Kamu dapet tempat magang belum?\"" << endl;
     tekanEnter();
 
-    cout << "Paman: \"Kalau belum sini paman tarik aja buat magang disini\"" << endl;
+    cout << "Paman: \"Kalau belum sini paman tarik aja buat magang disini.\"" << endl;
     tekanEnter();
 
-    cout << "Aku pun menerima tawaran tersebut. Karena...tidak ada pilihan lain, aku harus lulus magang untuk semester selanjutnya" << endl;
+    cout << "Aku pun menerima tawaran tersebut. Karena...tidak ada pilihan lain, aku harus lulus magang untuk semester selanjutnya." << endl;
     tekanEnter();
 
-    cout << "Keesokan harinya aku berangkat..." << endl;
+    cout << "Keesokan harinya aku bersiap-siap berangkat..." << endl;
     tekanEnter();
 
-    cout << "Entah kenapa aku merasa sangat mengantuk..." << endl;
+    cout << "Pamanku sudah memesan tiket mobil travel untukku." << endl;
     tekanEnter();
 
-    cout << "Aku tertidur di dalam perjalanan." << endl;
+    cout << "Saat aku keluar rumah, mobil travel itu sudah menunggu di depan rumahku." << endl;
     tekanEnter();
 
-    cout << "Aku terbangun di sebuah parkiran kantor polisi" << endl;
+    cout << "Aku pun menaiki mobil tersebut dan aku melihat supir di kursi depan." << endl;
     tekanEnter();
 
-    cout << "dengan segera akupun keluar dari mobil travel tersebut dan memasuki kantor polisi tersebut" << endl;
+    cout << "Seiring perjalanan, supir itu hanya diam." << endl;
     tekanEnter();
 
-    cout << "Disaat memasuki kantor polisi, suasana seketika ramai oleh perbincangan para polisi yang berada di lobi" << endl;
+    cout << "Aku mencoba untuk mencairkan suasana dengan mengajaknya mengobrol." << endl;
     tekanEnter();
 
-    cout << "Ketika sedang menelusuri lobig seorang pria terasa mendekat dan berkata:. \"Saya Pak Santoso.\"" << endl;
+    cout << "Namun tiba-tiba, entah kenapa aku merasa sangat mengantuk..." << endl;
     tekanEnter();
 
-    cout << "Tanpa intruksi apapun dia pergi meninggalkanku, tetapi dari gerak gerik nya dia mengakatakan untuk mengikutinya" << endl;
+    cout << "Akhirnya, aku tertidur selama perjalanan." << endl;
     tekanEnter();
 
-    cout << "Aku dibawa ke dalam sebuah ruangan arsip dimana ada banyak pegawai yang sedang mengurusi arsip" << endl;
+    cout << "Saat aku terbangun, aku menyadari bahwa aku sudah sampai di sebuah parkiran kantor polisi." << endl;
     tekanEnter();
 
-    cout << "Aku dibawa ke bilik 14 dihadapkan dengan komputer tua yang mungkin hanya bisa dipakai untuk membuat dokumen" << endl;
+    cout << "Dengan segera, aku pun keluar dari mobil travel tersebut dan memasuki kantor polisi tersebut." << endl;
     tekanEnter();
 
-    cout << "Pak Santoso: \"Selamat datang! Silahkan masukkan datamu...\"" << endl;
+    cout << "Disaat memasuki kantor polisi, suasana seketika ramai oleh perbincangan para polisi yang berada di lobi." << endl;
+    tekanEnter();
+
+    cout << "Ketika sedang menelusuri lobi seorang pria terasa mendekat dan berkata: \"Saya Pak Santoso.\"" << endl;
+    tekanEnter();
+
+    cout << "Tanpa intruksi apapun dia pergi meninggalkanku, tetapi dari gerak gerik nya dia mengakatakan untuk mengikutinya." << endl;
+    tekanEnter();
+
+    cout << "Aku dibawa ke dalam sebuah ruangan arsip dimana ada banyak pegawai yang sedang mengurusi arsip." << endl;
+    tekanEnter();
+
+    cout << "Aku dibawa ke bilik 14 dihadapkan dengan komputer tua yang mungkin hanya bisa dipakai untuk membuat dokumen." << endl;
+    tekanEnter();
+
+    cout << "Saat aku mencoba menyalakan komputer itu, sebuah sistem di komputer itu langsung menyambutku." << endl;
+    tekanEnter();
+
+    cout << "Sistem: \"Selamat datang! Silahkan masukkan datamu...\"" << endl;
     tekanEnter();
 
     // ================= INPUT PLAYER =================
@@ -191,10 +209,10 @@ Player prolog()
     cout << "Pak Santoso: \"Mulai sekarang kamu bekerja di sini.\"" << endl;
     tekanEnter();
 
-    cout << p.nama << "(Hanya terdiam dan mencoba memproses apa yang telah terjadi)" << endl;
+    cout << p.nama << ": (hanya terdiam dan mencoba memproses apa yang telah terjadi)" << endl;
     tekanEnter();
 
-    cout << p.nama << " :\"hmm kayak...ada yang aneh deh dengan pak Santoso, aura nya dingin banget\"" << endl;
+    cout << p.nama << ": \"Hmm kayak... ada yang aneh deh dengan pak Santoso. Aura nya dingin banget.\"" << endl;
     tekanEnter();
 
     return p;
@@ -203,13 +221,13 @@ Player prolog()
 // ==================== scene istirahat ===================
 void sceneIstirahat(Player p)
 {
-    cout << p.nama << ": \"lah....mati? ini gara-gara listrik kah? huh?\"" << endl;
+    cout << p.nama << ": \"Lah....mati? Ini gara-gara listrik kah? Huh?.\"" << endl;
     tekanEnter();
 
-    cout << "Aku membuat catatan kecil di meja untuk cek kasus tersebut nanti" << endl;
+    cout << "Aku membuat catatan kecil di meja untuk cek kasus tersebut nanti." << endl;
     tekanEnter();
 
-    cout << "Pak Santoso pun datang dengan segelas kopi hitam" << endl;
+    cout << "Setelah aku menulis catatan tersebut, Pak Santoso tiba-tiba datang ke ruang arsip." << endl;
     tekanEnter();
 
     cout << "Pak Santoso: \"Ikuti saya.\"" << endl;
@@ -218,47 +236,50 @@ void sceneIstirahat(Player p)
     cout << p.nama << ": (mengikutinya ke sebuah ruangan.)" << endl;
     tekanEnter();
 
-    cout << "Ternyata itu kamar tidur." << endl;
+    cout << "Ternyata Pak Santoso mengarahkanku ke sebuah kamar tidur." << endl;
     tekanEnter();
 
-    cout << p.nama << ": \"Wow... mewah untuk mahasiswa magang? seriusan pak?\"" << endl;
+    cout << p.nama << ": \"Wow... bagus banget untuk mahasiswa magang? Seriusan ini pak?.\"" << endl;
     tekanEnter();
 
-    cout << "Pak Santoso: \"iya..bapak tau rumah mu jauh, jadi kamu tinggal disini aja\"" << endl;
+    cout << "Pak Santoso: \"Iya. Bapak tau rumah mu jauh, jadi kamu tinggal disini saja.\"" << endl;
     tekanEnter();
 
-    cout << "Pak Santoso: \"kalo begitu bapak pulang dulu, nanti bapak yang akan kunci kantor nya\"" << endl;
+    cout << "Sebenarnya aku merasa agak aneh. Tapi alasannya cukup logis juga untuk menyediakan kamar ini." << endl;
     tekanEnter();
-
-    cout << p.nama << ": (merasa ada yang aneh)" << endl;
-    tekanEnter();
-
-    cout << "Pak Santoso: \"Besok kerja jam 8.\"" << endl;
+    
+    cout << "Pak Santoso: \"Besok kamu kerja jam 8.\"" << endl;
     tekanEnter();
 
     cout << "Pak Santoso: \"Persiapkan dirimu.\"" << endl;
     tekanEnter();
 
-    cout << "Pintu tertutup." << endl;
+    cout << p.nama << ": \"O-oh iya, baik pak!\"" << endl;
     tekanEnter();
 
-    cout << p.nama << ": \"hmm harus nya kalo misalkan aku tidur disini, aku ga sih yang kunci kantor nya\"" << endl;
+    cout << "Pak Santoso: \"Kalo begitu bapak pulang dulu. Nanti bapak yang akan kunci kantor nya.\"" << endl;
     tekanEnter();
 
-    cout << p.nama << ": \"nanti aku kekunci disini dong? lahh...ughhh udahlah, aku terlalu capek, gausah makan juga gapapalah\"" << endl;
+    cout << "Pak Santoso kemudian menutup pintu dan pergi." << endl;
     tekanEnter();
 
-    cout << p.nama << ": (tertidur pulas...)" << endl;
+    cout << p.nama << ": \"Hmm... harus nya kalo misalkan aku tidur disini, aku ga sih yang kunci kantor nya?\"" << endl;
+    tekanEnter();
+
+    cout << p.nama << ": \"Nanti aku kekunci disini dong? Lahh... ughhh udahlah, aku terlalu capek. Gak usah makan juga gapapalah.\"" << endl;
+    tekanEnter();
+
+    cout << p.nama << ": (Tertidur pulas...)" << endl;
     tekanEnter();
 }
 
 // chapter 1
 void chapter1awal(Player p)
 {
-    cout << "Aku bangun di jam 6 pagi. Angin sejuk bisa terasa dari dalam kamar.\n Aku rasa kantor ini berada di dataran tinggi karena rumahku yang berada di dekat pantai selalu terasa panas." << endl;
+    cout << "Aku bangun di jam 6 pagi. Angin sejuk bisa terasa dari dalam kamar.\nAku rasa kantor ini berada di dataran tinggi karena rumahku yang berada di dekat pantai selalu terasa panas." << endl;
     tekanEnter();
 
-    cout << p.nama << ":\"gila ni kantor sejuk banget\"" << endl;
+    cout << p.nama << ":\"Gila ni kantor sejuk banget.\"" << endl;
     tekanEnter();
 
     cout << "Saat aku menoleh ke meja di sebelah kasur ku, aku bisa melihat sebuah roti dan susu yang sepertinya sudah dipersiapkan untukku. \nBahkan dipintu sudah ada seragam polisi yang digantung. \nAku pun mulai mempersiapkan diriku." << endl;
@@ -267,14 +288,14 @@ void chapter1awal(Player p)
     cout << "Saat aku keluar kamar, Pak Santoso sudah menungguku." << endl;
     tekanEnter();
 
-    cout << "Pak Santoso: \"Ikuti aku.\n"
+    cout << "Pak Santoso: \"Ikuti aku.\"\n"
          << endl;
     tekanEnter();
 
     cout << "Nada datarnya entah kenapa sering membuatku kurang nyaman. " << endl;
     tekanEnter();
 
-    cout << "Tapi aku kesampingkan saja pikiran itu dan mengikutinya ke ruang arsip" << endl;
+    cout << "Tapi aku kesampingkan saja pikiran itu dan mengikutinya ke ruang arsip." << endl;
     tekanEnter();
 
     cout << "Sesampainya disana, aku langsung menyalakan komputer ku untuk memulai pekerjaanku hari ini. Hari ini sepertinya ada 10 file kasus yang masuk :" << endl;
@@ -295,7 +316,7 @@ void sceneChapter3(Player p)
     cout << "Namun, saat aku ingin keluar kamar, tiba-tiba Pak Santoso menelponku." << endl;
     tekanEnter();
 
-    cout << "Pak Santoso: \"Selamat pagi, .\"" << p.nama << endl;
+    cout << "Pak Santoso: \"Selamat pagi, " << p.nama << ".\"" << endl;
     tekanEnter();
 
     cout << "Seketika, aku merasa terheran-heran. Mengapa Pak Santoso tumben menelponku? Biasanya ia selalu datang ke kamar ku tiap pagi." << endl;
@@ -334,13 +355,13 @@ void sceneChapter3(Player p)
     cout << p.nama << ":    \"O-oh… halo pak! Iya, saya rekrutan baru itu. Perkenalkan pak nama saya " << p.nama << " pak\"" << endl;
     tekanEnter();
 
-    cout << "???:   \"" << p.nama << " ya… senang berkenalan denganmu. Nama bapak, Hendrik. Kalau ada hal-hal yang bikin kamu kesulitan, bisa panggil saya aja ya!\"" << endl;
+    cout << "Pak Hendrik:   \"" << p.nama << " Senang berkenalan denganmu! Nama bapak Hendrik. Kalau ada hal-hal yang bikin kamu kesulitan, bisa panggil saya aja ya!\"" << endl;
     tekanEnter();
 
     cout << "Entah kenapa, suaranya yang ceria itu bisa membuatku sedikit tenang kalau dibandingkan Pak Santoso." << endl;
     tekanEnter();
 
-    cout << "Apa mungkin aku cerita hal-hal aneh yang terjadi kemarin ya? Tapi kan kita baru saja ketemu. Masa mau langsung curhat." << endl;
+    cout << "Apa mungkin aku coba cerita hal-hal aneh yang terjadi kemarin ya? Tapi kan kita baru saja ketemu. Masa mau langsung curhat." << endl;
     tekanEnter();
 
     cout << "Saat aku ingin berbicara lagi padanya, ia sayangnya harus pergi sekarang karena ada pekerjaan. Namun saat melewatiku, ia berbisik sesuatu....." << endl;
@@ -408,7 +429,7 @@ void sceneEndingChapter3(Player p)
     cout << "Terima, Tolak, atau Abaikan...." << endl;
     tekanEnter();
 
-    cout << "Aku tidak bisa mencari bukti kasus ataupun memperbaiki data kasus itu. Apa yang aku seharusnya sekarang lakukan?" << endl;
+    cout << "Aku tidak bisa mencari bukti kasus ataupun memperbaiki data kasus itu. Apa yang aku seharusnya lakukan sekarang?" << endl;
     tekanEnter();
 }
 
@@ -466,7 +487,7 @@ void endingChapter3(int pilihan, Player player)
         cout << "Ternyata, mobil itu tidak mau berhenti dan terus berjalan hingga menabrakku." << endl;
         tekanEnter();
 
-        cout << "Membunuhku di tempat." << endl;
+        cout << "Tabrakan itu langsung membunuhku di tempat." << endl;
         tekanEnter();
 
         cout << "\n=== ENDING 2: TOLAK KASUS ===\n";
@@ -498,7 +519,8 @@ void endingChapter3(int pilihan, Player player)
         cout << "Ini adalah pembunuhan berantai yang sudah direncanakan secara matang!" << endl;
         tekanEnter();
 
-        cout << "Terlihat jelas sudah polanya." << endl;
+        cout << "Aku bisa melihat jelas polanya." << endl;
+        tekanEnter();
 
         cout << "Ya, mulai dari awal hingga akhir, ini semua hanyalah permainan untuk menjebakku." << endl;
         tekanEnter();
@@ -506,7 +528,7 @@ void endingChapter3(int pilihan, Player player)
         cout << "Aku pun mencoba untuk memindahkan semua arsip itu kedalam HP ku dan kabur dari kantor polisi ini untuk melaporkannya ke pihak berwenang lainnya." << endl;
         tekanEnter();
 
-        cout << "Namun, saat aku mencoba untuk keluar, tiba-tiba ada seseorang yang mendekapku hingga pingsan" << endl;
+        cout << "Namun, saat aku mencoba untuk keluar, tiba-tiba ada seseorang yang mendekapku dari belakang hingga pingsan" << endl;
         tekanEnter();
 
         cout << "Beberapa saat kemudian, aku bangun di sebuah tempat yang tidak kuketahui dengan posisi terikat di kursi." << endl;
@@ -518,7 +540,10 @@ void endingChapter3(int pilihan, Player player)
         cout << "Keheningan di ruangan ini kemudian hilang dengan seseorang yang tiba-tiba masuk." << endl;
         tekanEnter();
 
-        cout << "Dari kegelapan ia mengatakan 'Yo, lama tidak bertemu!'" << endl;
+        cout << "Dari kegelapan ia mengatakan... 'Yo, lama tidak bertemu!'" << endl;
+        tekanEnter();
+
+        cout << "\"Yo, sudah lama tidak bertemu...\"" << endl;
         tekanEnter();
 
         cout << "\n=== ENDING 3: ABAIKAN ===\n"
